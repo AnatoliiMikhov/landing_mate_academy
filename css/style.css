@@ -8,6 +8,7 @@ body {
 }
 
 /* --------------------------------- Header -------------------------------- */
+/* Header */
 
 .header__top {
     display: flex;
@@ -26,6 +27,7 @@ body {
     background-size: cover;
 }
 
+/* ---------------------------------- Menu --------------------------------- */
 /* Menu */
 .menu {
     min-height: 100vh;
@@ -63,6 +65,7 @@ body {
     text-decoration: underline;
 }
 
+/* --------------------------------- Icons --------------------------------- */
 /* Icons */
 .close {
     cursor: pointer;
