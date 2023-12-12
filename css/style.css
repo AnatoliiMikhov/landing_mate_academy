@@ -3,13 +3,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
 
-/* --------------------------------- Header -------------------------------- */
-/* Header */
+section {
+    min-height: 800px;
+}
 
+/* --------------------------------- Header -------------------------------- */
+/* #region header */
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -27,8 +34,10 @@ body {
     background-size: cover;
 }
 
+/* #endregion */
+
 /* ---------------------------------- Menu --------------------------------- */
-/* Menu */
+/* #region menu */
 .menu {
     min-height: 100vh;
     padding: 64px 120px;
@@ -41,16 +50,27 @@ body {
     margin-bottom: 64px;
 }
 
-.menu-list {
+.menu__close {
+    cursor: pointer;
+}
+
+/* #endregion menu */
+
+/* ------------------------------- Navigation ------------------------------ */
+/* #region nav */
+.nav__list {
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
-.menu-item {
-    margin-bottom: 32px;
+.nav__item {
+    margin-bottom: 16px;
 }
 
-.menu-link {
+.nav__link {
+    display: block;
+    padding: 16px 0;
     color: #292929;
     font-size: 22px;
     font-weight: 700;
@@ -60,13 +80,10 @@ body {
     text-transform: uppercase;
 }
 
-.menu-link:hover {
+.nav__link:hover {
     cursor: pointer;
+    color: slateblue;
     text-decoration: underline;
 }
 
-/* --------------------------------- Icons --------------------------------- */
-/* Icons */
-.close {
-    cursor: pointer;
-}
+/* #endregion nav */
