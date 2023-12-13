@@ -39,9 +39,19 @@ section {
 /* ---------------------------------- Menu --------------------------------- */
 /* #region menu */
 .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100vw);
+    transition: transform 500ms;
     min-height: 100vh;
     padding: 64px 120px;
     background: #E8EFF9;
+}
+
+.menu:target {
+    transform: translateX(0);
 }
 
 .menu__top {
