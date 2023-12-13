@@ -1,5 +1,4 @@
 * {
-    font-family: Inter, sans-serif;
     box-sizing: border-box;
 }
 
@@ -9,21 +8,14 @@ html {
 
 body {
     margin: 0;
+    font-family: Inter, sans-serif;
+    color: #292929;
 }
 
-section {
-    min-height: 800px;
-}
-
-/* --------------------------------- Header -------------------------------- */
 /* #region header */
-.header__top {
-    display: flex;
-    justify-content: space-between;
-}
-
 .header {
     display: flex;
+    /* display: none; */
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
@@ -34,11 +26,26 @@ section {
     background-size: cover;
 }
 
-/* #endregion */
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
 
-/* ---------------------------------- Menu --------------------------------- */
+.header__title {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
+/* #endregion header */
+
 /* #region menu */
 .menu {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,9 +71,8 @@ section {
     cursor: pointer;
 }
 
-/* #endregion menu */
+/* #endregion */
 
-/* ------------------------------- Navigation ------------------------------ */
 /* #region nav */
 .nav__list {
     padding: 0;
@@ -81,7 +87,6 @@ section {
 .nav__link {
     display: block;
     padding: 16px 0;
-    color: #292929;
     font-size: 22px;
     font-weight: 700;
     line-height: 22px;
@@ -97,3 +102,38 @@ section {
 }
 
 /* #endregion nav */
+
+/* #region main */
+.main {
+    padding: 120px;
+}
+
+.recommended__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
+.categories__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
+.how-to-buy__title {
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
+/* #endregion main */
