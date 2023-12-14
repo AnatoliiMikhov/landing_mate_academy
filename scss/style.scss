@@ -152,6 +152,7 @@ body {
 }
 
 .product {
+    flex-basis: 324px;
 
     &__photo {
         max-width: 100%;
@@ -161,6 +162,7 @@ body {
     &__title {
         margin-top: 0;
         margin-bottom: 8px;
+        font-size: 16px;
     }
 
     &__category {
@@ -179,6 +181,7 @@ body {
 /* #region categories */
 
 .categories {
+    padding-bottom: 120px;
 
     &__title {
         margin-top: 0;
@@ -192,6 +195,40 @@ body {
 }
 
 /* #endregion categories */
+
+/* #region category */
+
+.category {
+    margin-bottom: 64px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__photos {
+        display: flex;
+        gap: 3%;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .photo {
+        &-wide {
+            width: 65%;
+        }
+
+        &-square {
+            width: 32%;
+        }
+    }
+}
+
+/* #endregion category */
 
 /* #region how-to-buy */
 
@@ -225,6 +262,8 @@ body {
 
 
         &_link {
+            display: block;
+            padding: 10px 10px;
             text-decoration: none;
         }
 
