@@ -125,6 +125,7 @@ body {
 
 .main {
     padding: 0;
+    background-color: #fff;
 }
 
 /* #endregion main */
@@ -234,17 +235,60 @@ body {
 /* #region how-to-buy */
 
 .how-to-buy {
+    &__inner {
+        display: flex;
+        gap: 24px;
+        padding-bottom: 120px;
+    }
 
     &__title {
-        margin-top: 0;
+        flex-basis: 50%;
+        margin: 0;
         font-size: 48px;
         font-weight: bold;
         line-height: 100%;
         letter-spacing: -1.5px;
     }
+
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+    &__content {
+        flex-basis: 50%;
+    }
+
+    &__description {
+        margin: 0;
+        line-height: 27px;
+    }
 }
 
 /* #endregion how-to-buy */
+
+/* #region footer */
+.footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+
+    &__inner {
+        min-height: 460px;
+        background-image: url(../images/bg/footer_bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* #endregion footer */
 
 /* #region go__up */
 
@@ -264,8 +308,11 @@ body {
 
         &_link {
             display: block;
-            padding: 10px 10px;
             text-decoration: none;
+
+            img {
+                max-width: 100%;
+            }
         }
 
         span {
