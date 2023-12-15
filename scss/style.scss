@@ -20,6 +20,14 @@ body {
     width: 100%;
     min-height: auto;
     margin: 0 auto;
+
+    @media(max-width: 744px) {
+        padding: 0 72px;
+    }
+
+    @media(max-width: 479.99px) {
+        padding: 0 20px;
+    }
 }
 
 /* #region header */
@@ -31,17 +39,36 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media(max-width: 479.99px) {
+        background-image: url(../images/bg/header_bg_mobile.png);
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 64px 0;
         min-height: 100vh;
+
+        @media(max-width: 744px) {
+            padding: 64px 0 40px;
+        }
+
+        @media(max-width: 479.99px) {
+            padding: 36px 0 32px;
+        }
     }
 
     &__top {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__logo {
+        @media(max-width: 479.99px) {
+            width: 128px;
+            height: 16px;
+        }
     }
 
     &__title {
@@ -52,6 +79,26 @@ body {
         font-weight: 800;
         line-height: 100%;
         letter-spacing: -1.5px;
+
+        @media(max-width: 744px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 479.99px) {
+            font-size: 32px;
+        }
+    }
+
+    &__image {
+        &-waves {
+            width: 64px;
+            height: 76px;
+
+            @media(max-width: 479.99px) {
+                width: 32px;
+                height: 38px;
+            }
+        }
     }
 }
 
@@ -78,6 +125,11 @@ body {
         display: flex;
         justify-content: space-between;
         margin-bottom: 64px;
+    }
+
+    &__logo {
+        width: 128px;
+        height: 16px;
     }
 
     &__close {
@@ -107,7 +159,7 @@ body {
         font-size: 22px;
         font-weight: 700;
         color: #292929;
-        line-height: 22px;
+        line-height: 100%;
         letter-spacing: 2px;
         text-decoration: none;
         text-transform: uppercase;
@@ -116,6 +168,10 @@ body {
             cursor: pointer;
             color: #292929;
             text-decoration: underline;
+        }
+
+        @media(max-width: 479.99px) {
+            font-size: 18px;
         }
     }
 }
@@ -136,6 +192,10 @@ body {
 .recommended {
     padding: 120px 0 60px;
 
+    @media(max-width: 479.99px) {
+        padding: 64px 0 32px;
+    }
+
     &__title {
         margin-top: 0;
         margin-bottom: 64px;
@@ -144,12 +204,25 @@ body {
         font-weight: bold;
         line-height: 100%;
         letter-spacing: -1.5px;
+
+        @media(max-width: 744px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 479.99px) {
+            font-size: 32px;
+        }
     }
 
     &__products {
         display: flex;
         justify-content: center;
         gap: 24px;
+
+        @media(max-width: 744px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
@@ -159,6 +232,10 @@ body {
     &__photo {
         max-width: 100%;
         margin-bottom: 32px;
+
+        @media(max-width: 744px) {
+            margin-bottom: 16px;
+        }
     }
 
     &__title {
@@ -176,6 +253,11 @@ body {
         margin: 0;
         font-weight: bold;
     }
+
+
+    @media(max-width: 744px) {
+        // text-align: center;
+    }
 }
 
 /* #endregion recommended */
@@ -186,6 +268,11 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media(max-width: 479.99px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     &__title {
         margin-top: 0;
         margin-bottom: 64px;
@@ -194,6 +281,15 @@ body {
         font-weight: 700;
         line-height: 100%;
         letter-spacing: -1.5px;
+
+        @media(max-width: 744px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 479.99px) {
+            font-size: 32px;
+            margin-bottom: 48px;
+        }
     }
 }
 
@@ -203,6 +299,10 @@ body {
 
 .category {
     margin-bottom: 64px;
+
+    @media(max-width: 479.99px) {
+        margin-bottom: 40px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -218,6 +318,10 @@ body {
         margin: 0;
         font-size: 24px;
         font-weight: 700;
+
+        @media(max-width: 479.99px) {
+            font-size: 16px;
+        }
     }
 
     .photo {
@@ -238,10 +342,19 @@ body {
 .how-to-buy {
     padding-top: 60px;
 
+    @media(max-width: 479.99px) {
+        padding-top: 32px;
+    }
+
     &__inner {
         display: flex;
         gap: 24px;
         padding-bottom: 120px;
+
+        @media(max-width: 479.99px) {
+            flex-direction: column;
+            padding-bottom: 64px;
+        }
     }
 
     &__title {
@@ -251,6 +364,14 @@ body {
         font-weight: bold;
         line-height: 100%;
         letter-spacing: -1.5px;
+
+        @media(max-width: 744px) {
+            font-size: 40px;
+        }
+
+        @media(max-width: 479.99px) {
+            font-size: 32px;
+        }
     }
 
     &__benefits {
@@ -288,6 +409,10 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media(max-width: 744px) {
+            min-height: 400px;
+        }
     }
 }
 
@@ -306,7 +431,14 @@ body {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: #8db6f0;
+        background-color: #8db6f0ac;
+
+        @media(max-width: 743.99px) {
+            width: 40px;
+            height: 40px;
+            // background-color: #8db6f07f;
+            background-color: rgba(34, 139, 34, 0.1);
+        }
 
 
         &_link {
@@ -314,14 +446,9 @@ body {
             text-decoration: none;
 
             img {
+                display: block;
                 max-width: 100%;
             }
-        }
-
-        span {
-            font-size: 24px;
-            font-weight: 800;
-            color: blue;
         }
     }
 }

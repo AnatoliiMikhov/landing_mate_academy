@@ -1,6 +1,6 @@
 let myButton = document.getElementById( "goup" )
 window.onscroll = function () {
-    if ( window.scrollY >= 720 ) {
+    if ( window.scrollY >= 600 ) {
         myButton.style.display = "flex"
         console.log( "I am here!" )
     } else {
